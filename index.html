@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+	<form>
+		<!-- Text Input -->
+		<label for="text-input">Text Input:</label>
+		<input type="text" id="text-input" name="text-input" placeholder="Enter text here" pattern="[A-Za-z]+" minlength="3" maxlength="50" required><br><br>
+
+		<!-- Password Input -->
+		<label for="password-input">Password Input:</label>
+		<input type="password" id="password-input" name="password-input" placeholder="Enter password" minlength="8" maxlength="16" required><br><br>
+
+		<!-- Email Input -->
+		<label for="email-input">Email Input:</label>
+		<input type="email" id="email-input" name="email-input" placeholder="Enter email" required><br><br>
+
+		<!-- Number Input -->
+		<label for="number-input">Number Input:</label>
+		<input type="number" id="number-input" name="number-input" min="0" max="100" required><br><br>
+
+		<!-- Date Input -->
+		<label for="date-input">Date Input:</label>
+		<input type="date" id="date-input" name="date-input" min="2023-01-01" max="2023-12-31" required><br><br>
+
+		<!-- Time Input -->
+		<label for="time-input">Time Input:</label>
+		<input type="time" id="time-input" name="time-input" min="09:00" max="18:00" required><br><br>
+
+		<!-- File Input -->
+		<label for="file-input">File Input:</label>
+		<input type="file" id="file-input" name="file-input" multiple><br><br>
+
+		<!-- Checkbox Input -->
+		<label for="checkbox-input">Checkbox Input:</label>
+		<input type="checkbox" id="checkbox-input" name="checkbox-input" value="checkbox"><br><br>
+
+		<!-- Radio Input -->
+		<label for="radio-input-1">Radio Input:</label>
+		<input type="radio" id="radio-input-1" name="radio-input" value="radio-1">
+		<label for="radio-input-2">Option 2:</label>
+		<input type="radio" id="radio-input-2" name="radio-input" value="radio-2"><br><br>
+
+		<!-- Select Input -->
+		<label for="select-input">Select Input:</label>
+		<select id="select-input" name="select-input" required>
+			<option value="">--Please select an option--</option>
+			<option value="option-1">Option 1</option>
+			<option value="option-2">Option 2</option>
+			<option value="option-3">Option 3</option>
+		</select><br><br>
+
+		<!-- Textarea Input -->
+		<label for="textarea-input">Textarea Input:</label>
+		<textarea id="textarea-input" name="textarea-input" rows="4" cols="50" minlength="10" maxlength="200"></textarea><br><br>
+
+		<!-- Submit Button -->
+		<input type="submit" value="Submit">
+		<!-- Reset Button -->
+		<input type="reset" value="Reset">
+	</form>
+
+</body>
+</html>
